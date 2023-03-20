@@ -1,0 +1,184 @@
+{
+
+	"title": "home",
+	"modules": [
+
+		"hrms/hrd/hremplmut",
+		"hrms/hrd/hremplclr",
+
+		"retail/pos/posterminal",
+		{"program":"community/tfi/allotopup", "variancename":"view"},
+
+		"finact/acct/rptcoa",
+		"finact/master/coa",
+		"fgta/riset/reporting",
+
+
+		{"program":"finact/acct/jurnal", "variancename":"view"},
+		{"program":"finact/acct/jurnal", "variancename":"entry"},
+
+		"finact/master/jurnalmodel",
+		"finact/master/jurnaltype",
+		"finact/master/jurnalsource",
+
+
+		{
+			"title" : "Administrator",
+			"modules" : [
+				"fgta/framework/fguser",
+				"fgta/framework/fggroup",
+				"fgta/framework/fgrole",
+				"fgta/framework/fgpermission",
+				"fgta/framework/fgsetting",
+				"hrms/master/empl",
+				"hrms/master/empluser",
+				"fgta/framework/dash"
+			]
+		},
+
+
+		{
+			"title" : "Items",
+			"modules" : [
+				"finact/master/depremodel",
+				"finact/items/itemproptype",
+				"finact/items/itemmanage",
+				"finact/items/itemmodel",
+				"finact/items/itemctg",
+				"finact/items/itemclass",
+				"finact/items/item",
+				"finact/items/itemstock",
+				"finact/items/itemasset",
+				"finact/items/itemassetmovemodel",
+				"finact/items/itemassetmovetype",
+				"finact/items/itemassetmove",
+				"finact/items/itemmvmodel",
+				"finact/items/itemmove"
+			]
+		},
+
+	
+
+
+
+		{
+			"title": "Setup",
+			"modules": [
+
+
+				{
+					"title" : "General Setup",
+					"modules" : [
+						"ent/general/bank",
+						"ent/general/country",
+						"ent/general/curr",
+						"ent/general/doctype",
+						"ent/general/gender",
+						"ent/general/religion",
+						"ent/affiliation/contacttype",
+						"ent/affiliation/partnertype",
+						"ent/affiliation/partnerorg",
+						"ent/affiliation/partnercategory",
+						"ent/affiliation/partner",
+						"ent/affiliation/brandtype",
+						"ent/affiliation/brand",
+						{"program":"ent/affiliation/brand", "variancename":"manual-id-input"},
+						"ent/general/interface"
+					]
+				},
+		
+				{
+					"title" : "Location Setup",
+					"modules" : [
+						"ent/location/area",
+						"ent/location/prov",
+						"ent/location/city",
+						"ent/location/zone",
+						"ent/location/land",
+						"ent/location/site",
+						"ent/location/landtype",
+						"ent/location/sitemodel",
+						"ent/location/sitegroup"
+					]
+				},
+		
+				{
+					"title" : "Organisation Setup",
+					"modules" : [
+						"ent/organisation/depttype",
+						"ent/organisation/deptmodel",
+						"ent/organisation/deptgroup",
+						"ent/organisation/authlevel",
+						"ent/organisation/auth",
+						"ent/organisation/dept",
+						"ent/organisation/unitgroup",
+						"ent/organisation/unit",
+						"ent/organisation/docs"
+					]
+				}
+
+			]
+		},
+
+
+	
+
+		{
+			"title" : "HR",
+			"modules" : [
+				"hrms/master/empl",
+				"fgta/framework/fguser",
+				"hrms/master/empluser",
+				"hrms/master/edu",
+				"hrms/master/hrgrd",
+				"hrms/master/hrjob",
+				"hrms/master/hrsection",
+				"hrms/master/hrstatus",
+				"hrms/master/marital",
+				{"program":"ent/organisation/dept", "variancename":"view"},
+				{"program":"ent/location/site", "variancename":"view"},
+
+				"hrms/hrd/hremplmutmodel"
+
+			]
+		},
+
+
+		{
+			"title" : "Wholesale",
+			"modules" : [
+
+				"ent/affiliation/brand",
+
+
+
+				"retail/master/merchseagroup",
+				"retail/master/merchsea",
+				
+				"retail/master/merchitemgro",
+				"retail/master/merchitemctg",
+
+				"finact/items/itemclass",
+
+				"retail/master/mercharticle",
+
+				"retail/sales/merchquotout",
+				"retail/sales/merchorderin",
+
+				"finact/sales/orderintype",
+				"finact/sales/orderindelv",
+
+				"finact/fin/billout"
+			]
+		}
+		
+
+
+
+		
+
+	]
+
+
+	
+}

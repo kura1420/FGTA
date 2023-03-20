@@ -1,0 +1,11 @@
+{
+	"title" : "Mega Qr Generator",
+	"allowanonymous" : true,
+	"allowedgroups" : ["public"],
+	"apis" : {
+		"generate" : { "allowanonymous": true, "allowedgroups" : ["public"] },
+		"checkstatus" : { "allowanonymous": true, "allowedgroups" : ["public"] },
+		"getmachineinfo" : { "allowanonymous": true, "allowedgroups" : ["public"] }
+	}	
+}
+

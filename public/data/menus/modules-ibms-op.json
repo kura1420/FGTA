@@ -1,0 +1,48 @@
+{
+	"title" : "ENT",
+	"disabled" : false,
+	"modules" : [
+		{
+			"title" : "Pre Sailed",
+			"icon" : "icon-packinglist-white.png",
+			"backcolor" : "#d3c77d",
+			"disabled" : false,
+			"modules" : [
+				{
+					"title" : "Logistic Preparation",
+					"icon" : "icon-general-white.png",
+					"backcolor" : "#248e91",
+					"disabled" : false,
+					"modules" : [
+						"finact/procurement/inquiry",
+						"finact/procurement/request",
+						"finact/procurement/orderout",
+						"finact/procurement/recv"
+					]				
+				},
+				{
+					"title" : "Crew Preparation",
+					"icon" : "icon-hrmaster-white.png",					
+					"disabled" : false,
+					"modules" : [
+						"finact/master/project",
+						"finact/master/projecttask"
+					]
+				}				
+			]
+		},
+		{	"title" : "On Sailed",
+			"icon" : "icon-truck-white.png",
+			"backcolor" : "#737174",
+			"disabled" : false,
+			"modules" : []
+		},
+		{
+			"title" : "Post Sailed",
+			"icon" : "icon-location-white.png",
+			"backcolor" : "#3f497c",
+			"disabled" : false,
+			"modules" : []
+		}
+	]
+}

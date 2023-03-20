@@ -1,0 +1,40 @@
+{
+	"title": "home *****",
+	"modules": [
+		"coop/dashboard/parent",
+		"coop/dashboard/dashcard",
+		
+		{
+			"title": "Simpanan",
+			"backcolor" : "#248e91",
+			"icon" : "icon-masterdata.svg",
+			"disabled": false,
+			"modules": [
+				"coop/trans/mutasi",
+				{"program":"coop/trans/savingreq", "variancename":"request"},
+				{"program":"coop/trans/savingchg", "variancename":"request"}
+			]
+		},
+
+		{
+			"title": "Pinjaman",
+			"backcolor" : "#212e91",
+			"icon": "assignment_white_48dp.png",
+			"disabled": false,
+			"modules": [
+
+				{"program":"coop/trans/loanreq", "variancename":"request"}
+			]
+		},
+
+		{
+			"title": "Report",
+			"backcolor" : "#d7895b",
+			"icon" : "icon-enterprise-white.png",
+			"disabled": false,
+			"modules": [
+			]
+		}
+
+	]
+}

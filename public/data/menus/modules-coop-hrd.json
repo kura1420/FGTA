@@ -1,0 +1,50 @@
+{
+	"title": "home *****",
+	"modules": [
+
+		{
+			"title" : "Member",
+			"icon" : "icon-admin-white.png",
+			"backcolor" : "#8ab0c5",
+			"disabled" : false,
+			"modules": [				
+				"coop/master/member"
+			]
+		},
+
+		{
+			"title": "Tabungan",
+			"backcolor" : "#248e91",
+			"icon" : "icon-masterdata.svg",
+			"disabled": false,
+			"modules": [
+				"coop/master/savingtype",
+				"coop/master/savingrek",
+				"coop/trans/saving",
+				"coop/trans/savingsche",
+				"coop/trans/savinggen"
+			]
+		},
+
+		{
+			"title": "Pinjaman",
+			"backcolor" : "#212e91",
+			"icon": "assignment_white_48dp.png",
+			"disabled": false,
+			"modules": [
+
+				{"program":"coop/trans/loanreq", "variancename":"approval"}
+			]
+		},
+
+		{
+			"title": "Report",
+			"backcolor" : "#d7895b",
+			"icon" : "icon-enterprise-white.png",
+			"disabled": false,
+			"modules": [
+			]
+		}
+
+	]
+}

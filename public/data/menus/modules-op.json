@@ -1,0 +1,13 @@
+{
+	"title": "home *****",
+	"modules": [		
+		{
+			"title" : "Operation",
+			"icon" : "icon-admin-white.png",
+			"backcolor" : "#8ab0c5",
+			"disabled" : false,
+			"file" : "modules-ibms-op.json"
+		}	
+	]
+}
+

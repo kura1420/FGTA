@@ -1,0 +1,46 @@
+{
+	"title" : "Fleet",
+	"disabled" : false,
+	"modules" : [
+		{
+			"title" : "Master Data",
+			"icon" : "storage_white_24dp.png",
+			"backcolor" : "#3c3945",
+			"disabled" : false,
+			"modules" : [
+				"ent/general/idconfig",
+				"ent/general/doceditor",
+				"ent/general/cargoitem",
+				"ent/general/unititem",
+
+				"finact/items/item",
+				"finact/items/itemasset",
+				"finact/items/itemassetstatus",
+				"finact/items/itemclass",
+				"finact/items/itemclassgroup",
+				"finact/items/itemmodel",
+
+				"finact/sales/salesorder",
+				"finact/master/salesordertype",
+
+				"ent/location/city",
+				"ent/location/prov"
+			]
+		},
+
+		{
+			"title" : "Ship",
+			"icon" : "icon-truck-white.png",
+			"backcolor" : "#3c3945",
+			"disabled" : false,
+			"modules" : [
+				"fleet/ship/type",
+				"fleet/ship/particular",
+				"fleet/ship/bunder",
+				"fleet/ship/comorder",
+				"fleet/ship/quotation"
+			]
+		}
+
+	]
+}

@@ -1,0 +1,35 @@
+## backup
+
+--skip-triggers 
+
+mysqldump -u root --routines fgtadb > fgtadb-backup-$(date +%F).sql
+
+
+
+
+CREATE DATABASE $DATABASE CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+## restore
+
+
+
+mysql -u root -p --init-command="SET SESSION FOREIGN_KEY_CHECKS=0;" fgtadb < /home/agung/Development/fgtacloud4u/server/rootdir/backupdb/fgtadb-backup-2021-06-07.sql
+
+
+mysql -u root -p aigner_stating < /home/agung/Development/fgtacloud4u/server/rootdir/backupdb/fgtadb-backup-2021-06-07.sql
+
+
+
+ 
+
+di mysql 8
+ALTER USER 'mysqlUsername'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mysqlUsernamePassword';
+
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost';
+
+
+
+
+add error_reporting(E_ALL); ini_set('display_errors', 1); to index.php file and check error log file located in var folder – 
+lalit mohan
+ May 1 '18 at 11:52

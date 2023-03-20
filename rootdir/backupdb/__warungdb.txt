@@ -1,0 +1,4 @@
+CREATE DATABASE fgtawarungdblocal CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+mysql -u root -p --init-command="SET SESSION FOREIGN_KEY_CHECKS=0;" fgtawarungdblocal < fgtawarungdb.backup.sql
+

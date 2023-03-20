@@ -1,0 +1,78 @@
+{
+	"title": "home *****",
+	"modules": [
+
+		"coop/dashboard/parent",
+		"coop/dashboard/dashmbr",
+		"fgta/example/longrun",
+		"finact/acct/jurnal",
+		"finact/items/itemasset",
+
+
+		{
+				"title" : "Administrator",
+				"icon" : "people_settings_filled_icon.png",
+				"backcolor" : "#5d328a",
+				"disabled" : false,
+				"file" : "modules-fgta-administrator.json"
+		},
+
+
+		{
+			"title" : "Master Data",
+			"icon" : "icon-admin-white.png",
+			"backcolor" : "#8ab0c5",
+			"disabled" : false,
+			"modules": [				
+				"coop/master/member",
+				"coop/master/interrest",				
+				"coop/master/transtype"
+			]
+		},
+
+		{
+			"title": "Tabungan",
+			"backcolor" : "#248e91",
+			"icon" : "icon-masterdata.svg",
+			"disabled": false,
+			"modules": [
+				"coop/master/savingtype",	
+				"finact/sales/orderin",		
+				"finact/sales/orderintype",				
+				"coop/master/savingrek",
+				"coop/trans/saving"
+			]
+		},
+
+		{
+			"title": "Pinjaman",
+			"backcolor" : "#212e91",
+			"disabled": false,
+			"modules": [
+				"coop/master/member",
+				"coop/master/loantype",
+				"coop/master/savingtype"
+			]
+		},
+
+		{
+			"title": "Report",
+			"backcolor" : "#d7895b",
+			"icon" : "icon-enterprise-white.png",
+			"disabled": false,
+			"modules": [
+				"coop/trans/loan",
+				"coop/trans/saving"
+			]
+		},
+
+		{
+			"title" : "hrms",
+			"icon" : "icon-hrms-white.png",
+			"backcolor" : "#a25656",
+			"disabled" : false,
+			"file" : "modules-fgta-hrms.json"
+		}
+
+	]
+}

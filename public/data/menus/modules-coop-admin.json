@@ -1,0 +1,94 @@
+{
+	"title": "home *****",
+	"modules": [
+
+		"coop/dashboard/parent",
+		"coop/dashboard/dashmbr",
+		"fgta/example/longrun",
+		"finact/acct/jurnal",
+		"finact/items/itemasset",
+
+
+		{
+				"title" : "Administrator",
+				"icon" : "people_settings_filled_icon.png",
+				"backcolor" : "#2C4C67",
+				"disabled" : false,
+				"file" : "modules-fgta-administrator.json"
+		},
+
+
+		{
+			"title" : "Master Data",
+			"icon" : "icon-admin-white.png",
+			"backcolor" : "#8ab0c5",
+			"disabled" : false,
+			"modules": [				
+				"coop/master/periodemo",
+				"coop/master/member",
+				"coop/master/interrest",				
+				"coop/master/transtype",
+				"coop/trans/savingsaldo"
+			]
+		},
+
+		{
+			"title": "Simpanan",
+			"backcolor" : "#248e91",
+			"icon" : "icon-masterdata.svg",
+			"disabled": false,
+			"modules": [
+				"coop/master/savingmodel",
+				"coop/master/savingtype",			
+				"coop/master/savingrek",
+				"coop/trans/saving",
+				"coop/trans/savingreq",
+				{"program":"coop/trans/savingreq", "variancename":"approval"},
+
+				"coop/trans/savingsche",
+				"coop/trans/savingchg",
+				{"program":"coop/trans/savingchg", "variancename":"approval"}
+			]
+		},
+
+		{
+			"title": "Pinjaman",
+			"backcolor" : "#212e91",
+			"disabled": false,
+			"modules": [
+				"coop/master/prodgroup",
+				"coop/master/prod",
+				"coop/master/loantype",
+				"coop/master/loanrek",
+				"coop/trans/loanreq",
+				{"program":"coop/trans/loanreq", "variancename":"approval"},
+				"coop/trans/loan",
+				"coop/trans/loanpay",
+				"coop/trans/loansche"
+			]
+		},
+
+		{
+			"title": "Proses",
+			"backcolor" : "#AB6D23",
+			"icon": "icon-sun-white.png",
+			"disabled": false,
+			"modules": [
+
+				"coop/trans/savinggen"
+			]
+		},
+
+		{
+			"title": "Report",
+			"backcolor" : "#d7895b",
+			"icon" : "icon-enterprise-white.png",
+			"disabled": false,
+			"modules": [
+				"coop/report/rptsavinggen",
+				"fgta/example/reporting"
+			]
+		}
+
+	]
+}

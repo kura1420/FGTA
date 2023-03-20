@@ -1,0 +1,239 @@
+{
+	"title": "home *****",
+	"modules": [		
+		"coop/dashboard/dashcard",
+		"coop/dashboard/dashtbl",
+		"coop/dashboard/parent",
+		"fgta/framework/fguser",
+		"fgta/framework/fggroup",
+		"hrms/master/empl",
+		"hrms/master/empluser",
+		"ent/organisation/auth",
+		"ent/organisation/docs",
+
+		"ent/general/checktype",
+		"ent/general/checkval",
+		"ent/general/checktpl",
+
+		{
+			"title" : "Affiliation",
+			"icon" : "icon-affiliation-white.png", 
+			"backcolor" : "#737174",
+			"disabled" : false,
+			"modules" : [
+				"ent/affiliation/brandtype",
+				"ent/affiliation/brand",
+				"ent/affiliation/contacttype",
+				"ent/affiliation/partnertype",
+				"ent/affiliation/partnerorg",
+				"ent/affiliation/partnercategory",
+				"ent/affiliation/partner"						
+			]
+		},
+
+		{
+			"title" : "Organisation",
+			"icon" : "icon-organiszation-white.png",
+			"backcolor" : "#7d81b1",
+			"disabled" : false,
+			"modules" : [
+				"ent/organisation/authlevel",
+				"ent/organisation/auth",
+				"ent/organisation/unitgroup",
+				"ent/organisation/unit",
+				"ent/organisation/depttype",
+				"ent/organisation/deptmodel",
+				"ent/organisation/deptgroup",
+				"ent/organisation/dept",
+				"ent/organisation/docs"
+			]
+		},
+
+		{
+			"title" : "Location",
+			"icon" : "icon-location-white.png",
+			"backcolor" : "#af5962",
+			"disabled":false,
+			"modules" : [
+				"ent/location/area",
+				"ent/location/prov",
+				"ent/location/city",
+				"ent/location/zone",
+				"ent/location/landtype",
+				"ent/location/land",
+				"ent/location/sitegroup",
+				"ent/location/sitemodel",
+				"ent/location/site"
+			]
+		},
+
+		{
+			"title": "Finact",
+			"backcolor" : "#2A0944",
+			"icon" : "icon-finact-white.svg",
+			"disabled": false,
+			"modules": [				
+	
+				"finact/dashboards/dash01",
+				"finact/items/dashitemasset",
+				"finact/items/dash02",
+				
+				"finact/items/itemmodel",
+				"finact/items/itemclassgroup",
+				"finact/items/item",
+				"finact/items/itemstock",
+				"finact/items/itemasset",
+				"finact/items/rptitemasset",
+				"finact/items/itemclass",
+				"finact/master/coa",
+				"finact/master/periodemo",
+				"finact/master/project",
+				"finact/acct/coaformat",
+				"finact/acct/coaformatset",
+				"finact/budget/projbudget",
+				"finact/budget/corpbudget",
+				"finact/budget/deptbudget",
+				"finact/budget/deptbudgetview",
+				"finact/procurement/inquirytype",
+				"finact/procurement/inquirymodel",
+				"finact/procurement/inquiry",
+				"finact/procurement/request",
+				"finact/procurement/orderout",
+				"finact/procurement/recv",
+				"finact/fin/billin",		
+				"finact/acct/jurnal",
+				"finact/acct/rptneraca",
+				"finact/acct/rptneraca_v2",
+				"finact/acct/rptlabarugi",
+				"finact/acct/rptlabarugi_v2",
+				"finact/acct/rpttrialbal",
+				"finact/acct/rptagingar",
+				"finact/acct/rptagingardetil",
+				
+				"finact/acct/receivable",
+				
+				"finact/sales/orderintype",
+				"finact/sales/orderin",
+				"finact/sales/orderindelv",
+				"finact/fin/billout",
+				"finact/fin/recvschedule",
+				"finact/fin/ofrecv",
+				"finact/fin/payment",
+				"finact/items/itemassetmovemodel",
+				"finact/items/itemassetmovetype",
+				"finact/items/itemassetmove",
+				"finact/master/jurnaltype",
+				"finact/master/jurnalsource"
+			]
+		},
+
+		{
+			"title": "Fleet",
+			"backcolor" : "#3FA796",
+			"icon" : "ship_regular_icon.png",
+			"disabled": false,
+			"modules": [
+				"fleet/ship/type",
+				"fleet/ship/particular",
+				"fleet/ship/particularset",
+				"fleet/ship/shipptccheck",
+				"fleet/ship/comorder",
+				"fleet/ship/quotation",
+				"fleet/ship/spal",
+				"fleet/ship/salesorder",
+				"fleet/master/opactivity",
+				"fleet/master/opstatus",
+				"fleet/ship/opdaily",
+				"fleet/ship/rptopdaily",
+				"fleet/dashboard/dashboard1",
+				"fleet/ship/rptshipptccheck",
+
+						
+				"fleet/ship/salesorder",
+				"fleet/presail/batch",
+				"fleet/presail/engcheck"
+			]
+		},
+
+
+		{
+			"title": "Agency",
+			"backcolor" : "#FEC260",
+			"icon" : "icon-masterdata.svg",
+			"disabled": false,
+			"modules": [						
+				"fleet/master/syahbandar",
+				"fleet/master/shipset",
+						
+				"fleet/agency/agencytype",
+
+				"fleet/agency/clearence",
+				"fleet/agency/sertifikat",
+				"fleet/agency/airtawar",
+				"fleet/agency/layanan",
+				"fleet/agency/sijil",
+				
+				
+				"fleet/master/shipdoc",
+				"fleet/master/shipdoctype",				
+				"fleet/agency/agencyorder",
+				"fleet/agency/agordin",
+				"fleet/agency/agbillout",
+				"fleet/agency/rptagencyorder",
+				"fleet/agency/rptagencysales",
+				"fleet/agency/rptagencyclear",
+				"fleet/dashboard/dashagencysales"
+			]
+		},
+
+
+		
+		{
+			"title": "Koperasi",
+			"backcolor" : "#A10035",
+			"icon" : "cooperation.png",
+			"disabled": false,
+			"modules": [				
+				"coop/master/member",	
+				"coop/master/interrest",
+				"coop/master/transtype",	
+				"coop/master/loantype",	
+				"coop/master/loanrek",
+				"coop/master/savingmodel",
+				"coop/master/savingtype",
+				"coop/master/savingrek",
+				"coop/trans/saving",
+				"coop/trans/savinggen",
+				"coop/trans/savingreq",
+				{"program":"coop/trans/savingreq", "variancename":"request"},
+				{"program":"coop/trans/savingreq", "variancename":"approval"},	
+				
+				"coop/master/prodgroup",
+				"coop/master/prod",
+				"coop/trans/loanreq",
+				{"program":"coop/trans/loanreq", "variancename":"request"},
+				{"program":"coop/trans/loanreq", "variancename":"approval"},	
+				
+				"coop/trans/loan",		
+			
+				"coop/trans/savingreq",
+
+				"coop/trans/savingsche",
+
+				"coop/master/rekgen",
+
+				"coop/report/rptmember",
+
+				"coop/trans/mutasi",
+		
+				"coop/report/rpttabungan",
+		
+				"coop/trans/savingsaldo"
+			]
+		},
+
+		"fgta/riset/reporting"
+	]
+}
+
+

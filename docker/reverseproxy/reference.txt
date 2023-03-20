@@ -1,0 +1,16 @@
+https://gist.github.com/dahlsailrunner/679e6dec5fd769f30bce90447ae80081
+
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -config localhost.conf -passin pass:rahasia123!
+
+
+openssl pkcs12 -export -out localhost.pfx -inkey localhost.key -in localhost.crt
+
+
+-- di client
+
+openssl pkcs12 -in localhost.pfx -nocerts -out certificate.pem -nodes
+openssl pkcs12 -in localhost.pfx -nokeys -out certificate.crt -nodes
+
+
+sudo cp Root.crt /usr/local/share/ca-certificates/Root.crt

@@ -1,0 +1,81 @@
+version: '3.9'
+
+services:
+  fgtadb:
+    container_name: fgtadb
+    build: fgtadb
+    image: fgtadb
+    ports:
+      - 3306:3306
+    networks:
+      - fgtanetwork
+    environment:
+      - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=yes
+      - MARIADB_ROOT_PASSWORD=
+    volumes:
+      - fgtadbdata:/var/lib/mysql
+      - ../rootdir/backupdb:/var/backups
+
+  fgtafs:
+    container_name: fgtafs
+    build: fgtafs
+    image: fgtafs
+    ports:
+      - 5984:5984
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=rahasia      
+    networks:
+      - fgtanetwork  
+    volumes:
+        - fgtafsdata:/opt/couchdb/data   
+
+
+  fgta4server:
+    container_name: fgta4server
+    build: fgta4server
+    image: fgta4server
+    ports:
+      - 8081:80
+    networks:
+      - fgtanetwork
+    extra_hosts:
+      - "host.docker.internal:host-gateway"      
+    environment:
+      - APACHE_DOCUMENT_ROOT:/var/www/html/fgta4
+    volumes:
+      - /var/www/fgtacloud4u:/var/www/fgtacloud4u
+      - ../../server_clients:/var/www/html/fgta4
+    depends_on:
+      - fgtadb  
+      - fgtafs
+
+
+  # reverseproxy:
+  #   container_name: reverseproxy
+  #   build: reverseproxy
+  #   image: reverseproxy
+  #   ports:
+  #     - 80:80
+  #     - 443:443
+  #   networks:
+  #     - fgtanetwork
+  #   depends_on:
+  #     - fgtadb 
+  #     - fgta4server
+
+
+
+networks:
+  fgtanetwork:
+    name: fgtanetwork
+  
+
+
+volumes:
+  fgtadbdata:
+    name: fgtadbdata
+  fgtafsdata:
+    name: fgtafsdata
+
+
